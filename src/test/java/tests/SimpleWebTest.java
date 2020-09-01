@@ -21,6 +21,7 @@ public class SimpleWebTest {
 
     @BeforeEach
     public void initWebDriver() {
+        System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, 30);
     }
